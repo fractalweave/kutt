@@ -6,12 +6,16 @@ import { Integrations } from '@sentry/apm';
 const { publicRuntimeConfig } = getConfig();
 
 export const initGA = () => {
-  ReactGA.initialize(publicRuntimeConfig.GOOGLE_ANALYTICS);
+  if (publicRuntimeConfig.GOOGLE_ANALYTICS) {
+    ReactGA.initialize(publicRuntimeConfig.GOOGLE_ANALYTICS);
+  }
 };
 
 export const logPageView = () => {
-  ReactGA.set({ page: window.location.pathname });
-  ReactGA.pageview(window.location.pathname);
+  if (publicRuntimeConfig.GOOGLE_ANALYTICS) {
+    ReactGA.set({ page: window.location.pathname });
+    ReactGA.pageview(window.location.pathname);
+  }
 };
 
 export const initSentry = () => {
@@ -28,13 +32,13 @@ export const initSentry = () => {
 };
 
 export const logEvent = (category = "", action = "") => {
-  if (category && action) {
+  if (category && action && publicRuntimeConfig.GOOGLE_ANALYTICS) {
     ReactGA.event({ category, action });
   }
 };
 
 export const logException = (description = "", fatal = false) => {
-  if (description) {
+  if (description && publicRuntimeConfig.GOOGLE_ANALYTICS) {
     ReactGA.exception({ description, fatal });
   }
 };

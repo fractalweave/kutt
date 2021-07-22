@@ -101,7 +101,7 @@ const Header: FC = () => {
         flexDirection={["column", "row"]}
         alignItems={["flex-start", "stretch"]}
       >
-        <LogoImage>
+        {/* <LogoImage>
           <a
             href="/"
             title="Homepage"
@@ -113,7 +113,7 @@ const Header: FC = () => {
             <img src="/images/logo.svg" alt="" />
             {publicRuntimeConfig.SITE_NAME}
           </a>
-        </LogoImage>
+        </LogoImage> */}
         {!isMobile && (
           <Flex
             style={{ listStyle: "none" }}
@@ -124,9 +124,9 @@ const Header: FC = () => {
             m={0}
             p={0}
           >
-            <Li>
+            <Li as="li" ml={[0, 0, 0]}>
               <ALink
-                href="//github.com/thedevs-network/kutt"
+                href="//github.com/fractalweave/kutt"
                 target="_blank"
                 rel="noopener noreferrer"
                 title="GitHub"
