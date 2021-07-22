@@ -12,7 +12,7 @@ const Button = styled.button`
   justify-content: center;
   margin: 0 16px;
   padding: 12px 28px;
-  font-family: "Inter", sans-serif;
+  font-family: "Inter var", sans-serif;
   background-color: #eee;
   border: 1px solid #aaa;
   font-size: 14px;

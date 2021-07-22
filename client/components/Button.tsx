@@ -15,6 +15,7 @@ export const Button = styled(Flex)<Props>`
   position: relative;
   align-items: center;
   justify-content: center;
+  font-family: "Inter var", sans-serif;
   font-weight: normal;
   text-align: center;
   line-height: 1;
