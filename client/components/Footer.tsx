@@ -30,7 +30,7 @@ const Footer: FC = () => {
         <ALink href="//rdelrio.com/" title="Ruben Del Rio">
           Ruben
         </ALink>
-        .{" & "}
+        {" & "}
         <ALink href="//thedevs.network/" title="The Devs">
           The Devs
         </ALink>
