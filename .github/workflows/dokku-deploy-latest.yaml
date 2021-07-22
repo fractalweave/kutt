@@ -20,5 +20,5 @@ jobs:
         with:
           # specify the `main` branch as the remote branch to push to
           branch: 'main'
-          git_remote_url: 'ssh://dokku@fractalweave.com:22/fw-url-kutt'
+          git_remote_url: 'ssh://dokku@fractalweave.com:fw-url-kutt'
           ssh_private_key: ${{ secrets.SSH_PRIVATE_KEY }}
