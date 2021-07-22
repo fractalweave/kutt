@@ -43,6 +43,7 @@ export const get: Handler = async (req, res) => {
 
 export const create: Handler = async (req: CreateLinkReq, res) => {
   const {
+    safe,
     reuse,
     password,
     customurl,
@@ -70,7 +71,7 @@ export const create: Handler = async (req: CreateLinkReq, res) => {
         address: customurl,
         domain_id
       }),
-    !customurl && utils.generateId(domain_id),
+    !customurl && utils.generateId(domain_id, !!safe),
     validators.bannedDomain(targetDomain),
     validators.bannedHost(targetDomain)
   ]);

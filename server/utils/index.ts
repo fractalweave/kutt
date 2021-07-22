@@ -40,14 +40,17 @@ export const signToken = (user: UserJoined) =>
     env.JWT_SECRET
   );
 
-export const generateId = async (domain_id: number = null) => {
+const safeAlphabet = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890';
+const unsafeAlphabet = safeAlphabet + "_$¢€£¤¥¦§©®±µ¶ÆæØøΓΔΘΛΞΠΣΦΨΩβλπ‽←↑→↓↔↕⌖⌘⎇⏎⏏⏻◐◑◒◓☀☁☂☃☄★☆☢☣☮☯♚♛♜♝♞♟♠♣♥♦♫♬♻⚐⚑☺☻⚒⚛";
+
+export const generateId = async (domain_id: number = null, safe: boolean = false) => {
   const address = generate(
-    "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890",
+    safe ? safeAlphabet : unsafeAlphabet,
     env.LINK_LENGTH
   );
   const link = await query.link.find({ address, domain_id });
   if (!link) return address;
-  return generateId(domain_id);
+  return generateId(domain_id, safe);
 };
 
 export const addProtocol = (url: string): string => {
