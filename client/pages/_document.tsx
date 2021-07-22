@@ -34,26 +34,26 @@ class AppDocument extends Document<Props> {
             name="description"
             content={`${publicRuntimeConfig.SITE_NAME}, a free URL shortener`}
           />
-          <link rel="preload" href="https://fractalweave.com/font/inter/Inter-roman.var.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
-          <link rel="preload" href="https://fractalweave.com/font/inter/Inter-italic.var.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
-          <link rel="preload" href="https://fractalweave.com/font/fraunces/Fraunces--latin_basic.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
-          <link rel="preload" href="https://fractalweave.com/font/fraunces/Fraunces-Italic--latin_basic.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
-          <link rel="preload" href="https://fractalweave.com/font/plex/IBMPlexMono-Bold-Latin1.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
-          <link rel="preload" href="https://fractalweave.com/font/plex/IBMPlexMono-BoldItalic-Latin1.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
-          <link rel="preload" href="https://fractalweave.com/font/plex/IBMPlexMono-ExtraLight-Latin1.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
-          <link rel="preload" href="https://fractalweave.com/font/plex/IBMPlexMono-ExtraLightItalic-Latin1.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
-          <link rel="preload" href="https://fractalweave.com/font/plex/IBMPlexMono-Italic-Latin1.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
-          <link rel="preload" href="https://fractalweave.com/font/plex/IBMPlexMono-Light-Latin1.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
-          <link rel="preload" href="https://fractalweave.com/font/plex/IBMPlexMono-LightItalic-Latin1.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
-          <link rel="preload" href="https://fractalweave.com/font/plex/IBMPlexMono-Medium-Latin1.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
-          <link rel="preload" href="https://fractalweave.com/font/plex/IBMPlexMono-MediumItalic-Latin1.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
-          <link rel="preload" href="https://fractalweave.com/font/plex/IBMPlexMono-Regular-Latin1.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
-          <link rel="preload" href="https://fractalweave.com/font/plex/IBMPlexMono-SemiBold-Latin1.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
-          <link rel="preload" href="https://fractalweave.com/font/plex/IBMPlexMono-SemiBoldItalic-Latin1.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
-          <link rel="preload" href="https://fractalweave.com/font/plex/IBMPlexMono-Text-Latin1.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
-          <link rel="preload" href="https://fractalweave.com/font/plex/IBMPlexMono-TextItalic-Latin1.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
-          <link rel="preload" href="https://fractalweave.com/font/plex/IBMPlexMono-Thin-Latin1.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
-          <link rel="preload" href="https://fractalweave.com/font/plex/IBMPlexMono-ThinItalic-Latin1.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
+          <link rel="preload" href="https://fractalweave.com/font/inter/Inter-roman.var.woff2" as="font" type="font/woff2" crossOrigin="anonymous" />
+          <link rel="preload" href="https://fractalweave.com/font/inter/Inter-italic.var.woff2" as="font" type="font/woff2" crossOrigin="anonymous" />
+          <link rel="preload" href="https://fractalweave.com/font/fraunces/Fraunces--latin_basic.woff2" as="font" type="font/woff2" crossOrigin="anonymous" />
+          <link rel="preload" href="https://fractalweave.com/font/fraunces/Fraunces-Italic--latin_basic.woff2" as="font" type="font/woff2" crossOrigin="anonymous" />
+          <link rel="preload" href="https://fractalweave.com/font/plex/IBMPlexMono-Bold-Latin1.woff2" as="font" type="font/woff2" crossOrigin="anonymous" />
+          <link rel="preload" href="https://fractalweave.com/font/plex/IBMPlexMono-BoldItalic-Latin1.woff2" as="font" type="font/woff2" crossOrigin="anonymous" />
+          <link rel="preload" href="https://fractalweave.com/font/plex/IBMPlexMono-ExtraLight-Latin1.woff2" as="font" type="font/woff2" crossOrigin="anonymous" />
+          <link rel="preload" href="https://fractalweave.com/font/plex/IBMPlexMono-ExtraLightItalic-Latin1.woff2" as="font" type="font/woff2" crossOrigin="anonymous" />
+          <link rel="preload" href="https://fractalweave.com/font/plex/IBMPlexMono-Italic-Latin1.woff2" as="font" type="font/woff2" crossOrigin="anonymous" />
+          <link rel="preload" href="https://fractalweave.com/font/plex/IBMPlexMono-Light-Latin1.woff2" as="font" type="font/woff2" crossOrigin="anonymous" />
+          <link rel="preload" href="https://fractalweave.com/font/plex/IBMPlexMono-LightItalic-Latin1.woff2" as="font" type="font/woff2" crossOrigin="anonymous" />
+          <link rel="preload" href="https://fractalweave.com/font/plex/IBMPlexMono-Medium-Latin1.woff2" as="font" type="font/woff2" crossOrigin="anonymous" />
+          <link rel="preload" href="https://fractalweave.com/font/plex/IBMPlexMono-MediumItalic-Latin1.woff2" as="font" type="font/woff2" crossOrigin="anonymous" />
+          <link rel="preload" href="https://fractalweave.com/font/plex/IBMPlexMono-Regular-Latin1.woff2" as="font" type="font/woff2" crossOrigin="anonymous" />
+          <link rel="preload" href="https://fractalweave.com/font/plex/IBMPlexMono-SemiBold-Latin1.woff2" as="font" type="font/woff2" crossOrigin="anonymous" />
+          <link rel="preload" href="https://fractalweave.com/font/plex/IBMPlexMono-SemiBoldItalic-Latin1.woff2" as="font" type="font/woff2" crossOrigin="anonymous" />
+          <link rel="preload" href="https://fractalweave.com/font/plex/IBMPlexMono-Text-Latin1.woff2" as="font" type="font/woff2" crossOrigin="anonymous" />
+          <link rel="preload" href="https://fractalweave.com/font/plex/IBMPlexMono-TextItalic-Latin1.woff2" as="font" type="font/woff2" crossOrigin="anonymous" />
+          <link rel="preload" href="https://fractalweave.com/font/plex/IBMPlexMono-Thin-Latin1.woff2" as="font" type="font/woff2" crossOrigin="anonymous" />
+          <link rel="preload" href="https://fractalweave.com/font/plex/IBMPlexMono-ThinItalic-Latin1.woff2" as="font" type="font/woff2" crossOrigin="anonymous" />
           <link
             href="https://fractalweave.com/font/fonts.css"
             rel="stylesheet"
