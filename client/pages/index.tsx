@@ -2,7 +2,7 @@ import React from "react";
 import Router from "next/router";
 
 import { DISALLOW_ANONYMOUS_LINKS } from "../consts";
-import NeedToLogin from "../components/NeedToLogin";
+// import NeedToLogin from "../components/NeedToLogin";
 // import Extensions from "../components/Extensions";
 import LinksTable from "../components/LinksTable";
 import AppWrapper from "../components/AppWrapper";
@@ -26,7 +26,6 @@ const Homepage = () => {
   return (
     <AppWrapper>
       <Shortener />
-      {!isAuthenticated && <NeedToLogin />}
       {isAuthenticated && <LinksTable />}
       <Footer />
     </AppWrapper>

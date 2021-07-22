@@ -32,10 +32,30 @@ class AppDocument extends Document<Props> {
           />
           <meta
             name="description"
-            content={`${publicRuntimeConfig.SITE_NAME} is a free and open source URL shortener with custom domains and stats.`}
+            content={`${publicRuntimeConfig.SITE_NAME}, a free URL shortener`}
           />
+          <link rel="preload" href="https://fractalweave.com/font/inter/Inter-roman.var.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
+          <link rel="preload" href="https://fractalweave.com/font/inter/Inter-italic.var.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
+          <link rel="preload" href="https://fractalweave.com/font/fraunces/Fraunces--latin_basic.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
+          <link rel="preload" href="https://fractalweave.com/font/fraunces/Fraunces-Italic--latin_basic.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
+          <link rel="preload" href="https://fractalweave.com/font/plex/IBMPlexMono-Bold-Latin1.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
+          <link rel="preload" href="https://fractalweave.com/font/plex/IBMPlexMono-BoldItalic-Latin1.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
+          <link rel="preload" href="https://fractalweave.com/font/plex/IBMPlexMono-ExtraLight-Latin1.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
+          <link rel="preload" href="https://fractalweave.com/font/plex/IBMPlexMono-ExtraLightItalic-Latin1.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
+          <link rel="preload" href="https://fractalweave.com/font/plex/IBMPlexMono-Italic-Latin1.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
+          <link rel="preload" href="https://fractalweave.com/font/plex/IBMPlexMono-Light-Latin1.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
+          <link rel="preload" href="https://fractalweave.com/font/plex/IBMPlexMono-LightItalic-Latin1.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
+          <link rel="preload" href="https://fractalweave.com/font/plex/IBMPlexMono-Medium-Latin1.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
+          <link rel="preload" href="https://fractalweave.com/font/plex/IBMPlexMono-MediumItalic-Latin1.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
+          <link rel="preload" href="https://fractalweave.com/font/plex/IBMPlexMono-Regular-Latin1.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
+          <link rel="preload" href="https://fractalweave.com/font/plex/IBMPlexMono-SemiBold-Latin1.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
+          <link rel="preload" href="https://fractalweave.com/font/plex/IBMPlexMono-SemiBoldItalic-Latin1.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
+          <link rel="preload" href="https://fractalweave.com/font/plex/IBMPlexMono-Text-Latin1.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
+          <link rel="preload" href="https://fractalweave.com/font/plex/IBMPlexMono-TextItalic-Latin1.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
+          <link rel="preload" href="https://fractalweave.com/font/plex/IBMPlexMono-Thin-Latin1.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
+          <link rel="preload" href="https://fractalweave.com/font/plex/IBMPlexMono-ThinItalic-Latin1.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
           <link
-            href="https://fonts.googleapis.com/css?family=Nunito:300,400,700"
+            href="https://fractalweave.com/font/fonts.css"
             rel="stylesheet"
           />
           <link rel="icon" sizes="196x196" href="/images/favicon-196x196.png" />
@@ -93,7 +113,7 @@ class AppDocument extends Document<Props> {
           style={{
             margin: 0,
             backgroundColor: Colors.Bg,
-            font: '16px/1.45 "Nunito", sans-serif',
+            font: '16px/1.45 "IBM Plex Mono", monospace',
             overflowX: "hidden",
             color: Colors.Text
           }}
